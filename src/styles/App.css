@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  /* total body */
+  #body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background-image: url("https://preview.redd.it/zjgs096khv591.jpg?auto=webp&s=c6135026c093f19ef733cb3435fb95d67aa6f345");
+  }
+  
+  /* heading tv maze logo */
+  header {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(70, 68, 68);
+    align-items: flex-start;
+  }
+  
+  /* logo of tv-maze */
+  #logo {
+    width: 150px;
+  }
+  
+  /* RADIO BUTTON FOR SEARCH OPTION */
+  #search-option {
+    display: flex;
+    gap: 19px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  /* nav which contains text and search option */
+  nav {
+    background-color: rgba(0, 0, 0, 0.349);
+  }
+  
+  /* text below search option */
+  #option-caption {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  /* search bar 1 for movies */
+  #search-bar-1 {
+    margin: 20px 0;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  /* search div */
+  #search {
+    display: flex;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 980px) {
+    #body {
+      min-height: 1200px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    #search-bar-1 {
+      width: 60%;
+    }
+    #logo {
+      width: 120px;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    #search-bar-1 {
+      width: 70%;
+    }
+    #logo {
+      width: 100px;
+    }
+    #body {
+      min-height: 950px;
+    }
+  }

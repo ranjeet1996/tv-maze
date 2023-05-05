@@ -1,0 +1,123 @@
+/* display area where movies will be displayed */
+#display {
+    display: grid;
+    align-items: center;
+  
+    row-gap: 40px;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.619);
+    /* background-image: url("https://media.istockphoto.com/photos/texture-of-gold-dust-or-drops-on-a-black-background-overlay-picture-id1323844836?k=20&m=1323844836&s=170667a&w=0&h=MUH70BdGqOd4ML_OBZeiro10QOQr-Ixzzv8tSNbU5DA="); */
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  /* individual movie boxes in the display area */
+  .box {
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(16, 52, 16);
+    margin-bottom: 20px;
+  }
+  
+  /* runtime in box */
+  #runtime {
+    color: white;
+    font-weight: 200;
+  }
+  
+  /* image of the movie */
+  .movie-img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  /* movie name */
+  .post-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+  }
+  
+  /* language area */
+  .post-lang {
+    font-size: 15px;
+    font-weight: 400;
+    color: aliceblue;
+  }
+  
+  /*total imdb rating area  */
+  .imdb {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 400;
+  }
+  
+  /* imdb rating for movie */
+  .rating {
+    font-size: 15px;
+  }
+  
+  /* responsive for ipad */
+  
+  @media only screen and (max-width: 980px) {
+    #display {
+      grid-template-columns: repeat(3, 30%);
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #display {
+      grid-template-columns: repeat(2, 50%);
+    }
+    /* runtime in box */
+    #runtime {
+      font-weight: 200;
+    }
+    /* movie name */
+    .post-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: aliceblue;
+    }
+  
+    /* language area */
+    .post-lang {
+      font-size: 14px;
+      font-weight: 400;
+      color: aliceblue;
+    }
+  
+    /*total imdb rating area  */
+    .imdb {
+      font-size: 17px;
+      color: aliceblue;
+      font-weight: 400;
+    }
+  
+    /* imdb rating for movie */
+    .rating {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #display {
+      grid-template-columns: repeat(1, 100%);
+      justify-items: center;
+    }
+    .box {
+      width: 200px;
+    }
+  
+    /* image of the movie */
+    .movie-img {
+      width: 100%;
+      height: 150px;
+    }
+  }
